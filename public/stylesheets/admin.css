@@ -1,0 +1,27 @@
+.my-top {
+	height: 50px;
+	background: #111;
+}
+
+.my-top span{
+	margin-left: 20px;
+	height: 100%;
+	line-height:50px;
+	color: #fff; 
+	font-size: 30px;
+}
+
+.my-top button{
+	margin-top:-12px;
+}
+
+.my-left {
+	padding: 5px 5px;
+
+}
+
+@media screen and (max-width: 992px) {
+	.my-left {
+		background: #111;
+	}
+}

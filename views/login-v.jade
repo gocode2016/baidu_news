@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    title 后台管理-登录
+    link(rel='stylesheet', type='text/css', href='../stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='../stylesheets/login.css')
+  body
+    .login-box
+      .title
+        h1 后台管理
+      // <form action="html/admin.html" method="post">
+      form#back-login(action='../login', method='post')
+        .form-group
+          label.sr-only(for='exampleInputEmail3') Email address
+          input#user.form-control(type='text', name='user', required='', placeholder='用户名: abc', autofocus='')
+        .form-group
+          label.sr-only(for='exampleInputPassword3') Password
+          input#pass.form-control(type='password', name='password', required='', placeholder='密码: 123')
+        .other.checkbox
+          label
+            input#remember.remember(name='remember', type='checkbox')
+            | 记住密码
+          a(href='#') 密码找回
+        button#ok.btn-block.btn.btn-success(name='ok', type='submit', value='yes') 登 录
+      p
+        | 还没注册
+        a(href='#')
+          | 现在注册
+          a
+    script(type='text/javascript').
+      alert('用户名 或 密码 有误');
+    script(src='../javascripts/jquery-3.1.0.min.js')
+    script(type='text/javascript', src='../javascripts/login.js')

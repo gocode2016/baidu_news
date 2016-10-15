@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+}
+
+header {
+	/*border: 1px solid;*/
+	height: 80px;
+	background: #3E98F0;
+}
+.top {
+	/*display: block;*/
+	width: 100%;
+	height: 49px;
+	/*border: 1px solid red;*/
+	background: #3e98f0 url(http://m.news.baidu.com/static/news/webappreact/imgs/bg-news-logo_344ce44.png) no-repeat;
+    background-position: center 10px;
+    background-size: 65px auto;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.backstage {
+	margin-right: 10px;
+	color: #fff;
+	/*border: 1px solid;*/
+	height: 49px;
+	line-height: 49px;
+	float: right;
+	text-decoration: none;
+	
+}
+
+.top-nav {
+	/*border: 1px solid red;*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.top-nav li{
+	height: 30px;
+	/*border: 1px solid;*/
+	float: left;
+}
+
+.top-nav li span {
+	/*height: 30px;*/
+	margin: 10px 0;
+	padding: 0 20px;
+	line-height: 30px;
+	border-right: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.content {
+	width: 100%;
+	float: left;
+	/*background: yellowgreen;*/
+}
+
+.content-item {
+	box-sizing: border-box;
+	width: 100%;
+	float: left;
+	
+	/*border: 1px solid red;*/
+	border-bottom: 1px solid #eee;
+	padding: 10px 17px;
+}
+
+.content-item img {
+	float: left;
+	/*border: 1px solid red;*/
+	width: 37%;
+	height: 90px;
+}
+
+.content-item .title {
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 58%;
+	/*border: 1px solid red;*/
+	float: left;
+}
+
+.content-item .title-text {
+	/*border: 1px solid;*/
+	color: #333;
+	font-size: 1.1rem;
+	margin-bottom: 5px;
+}
+
+.content-item time {
+	color: #aaa;
+}

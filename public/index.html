@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>百度新闻</title>
+		<link rel="stylesheet" href="stylesheets/index.css" />
+	</head>
+
+	<body>
+		<div>
+			<!--头部-->
+			<header>
+				<!--头部栏-->
+				<div class="top">
+					<a href="html/login.html" class="backstage">后台</a>
+				</div>
+				<!--头部选项卡-->
+				<nav>
+					<ul class="top-nav">
+						<li>
+							<span id="recommendation" class="navBtn" data-type="1">推荐</span>
+						</li>
+						<li>
+							<span id="authority" class="navBtn" data-type="2">百家</span>
+						</li>
+						<li>
+							<span id="local" class="navBtn" data-type="3">本地</span>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!--内容展示-->
+			<div id="content" class="content"></div>
+		</div>
+		
+		<script type="text/javascript" src="javascripts/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="javascripts/index.js"></script>
+	</body>
+
+</html>

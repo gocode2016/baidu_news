@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    title 后台管理
+    link(rel='stylesheet', type='text/css', href='../stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='../stylesheets/admin.css')
+  body
+    .container-fluid
+      .row
+        .my-top.col-md-12
+          span 后台管理
+          button.btn.btn-primary.hidden-md.hidden-lg(type='button', data-toggle='collapse', data-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
+            | =
+      .row
+        #collapseExample.my-left.col-md-2.collapse
+          #accordion.panel-group(role='tablist', aria-multiselectable='true')
+            .panel.panel-default
+              #headingOne.panel-heading(role='tab')
+                h4.panel-title
+                  a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                    | Group Item #1
+              #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                .panel-body
+                  | Anim pariatur cliche reprehenderit
+            .panel.panel-default
+              #headingTwo.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                    | Group Item #2
+              #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                .panel-body
+                  | Anim pariatur cliche reprehenderit
+            .panel.panel-default
+              #headingThree.panel-heading(role='tab')
+                h4.panel-title
+                  a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                    | Group Item #3
+              #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                .panel-body
+                  | Anim pariatur cliche reprehenderit
+        .my-right.col-md-10.table-responsive
+          // <button class="deleteBtn btn btn btn-danger">删除</button>
+          table.table
+            thead
+              th
+                // <td></td>
+            td 标题
+            td 日期
+            td 图片
+            td 类型
+            td
+            // <td></td>
+            tbody#conTbody
+              // <input type="file">
+            tfoot
+              tr
+                td
+                td
+                  input#insert-title.form-control(type='text', placeholder='Text input', required='')
+                td
+                  input#insert-date.form-control(type='date', required='')
+                td
+                  select#insert-image.form-control(required='')
+                    option 1.JPEG
+                    option 2.JPG
+                    option 3.JPEG
+                    option 4.JPEG
+                    option 5.JPEG
+                    option 6.JPEG
+                td
+                  select#insert-type.form-control(required='')
+                    option 推荐
+                    option 百家
+                    option 本地
+                td
+                  button#insertBtn.btn.btn-primary 插入
+                td
+                // <td><button id="testBtn" class="btn btn-primary">测试</button></td>
+    script(type='text/javascript', src='../javascripts/jquery-3.1.0.min.js')
+    script(type='text/javascript', src='../javascripts/bootstrap.min.js')
+    script(type='text/javascript', src='../javascripts/admin.js')

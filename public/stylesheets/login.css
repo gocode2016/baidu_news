@@ -1,0 +1,55 @@
+body {
+    background: #f1f1f1;
+}
+
+.login-box {
+    background: #fff;
+    padding: 20px;
+    width: 290px;
+    height: 320px;
+    border: 1px solid #9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #35b558;
+    -webkit-box-shadow: 0 0 10px 1px #35b558;
+    -moz-box-shadow: 0 0 10px 1px #35b558;
+    text-align: center;
+    /*居中*/
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*居中*/
+}
+
+.title {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.other {
+    position: relative;
+    height: 20px;
+    margin: 5px 0 10px 0;
+}
+
+.other>label {
+    position: absolute;
+    left: 0;
+}
+
+.other>a {
+    position: absolute;
+    right: 0;
+}
+
+.login-box>p {
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px){
+	.login-box{
+		width: 95%;
+	}
+}
